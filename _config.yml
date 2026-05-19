@@ -1,0 +1,31 @@
+title: Talewalk — dokumenty biznesowe
+description: Strategia, partnerzy, marketing, granty — wszystko nie-techniczne projektu Talewalk
+
+# Motyw GitHub Pages (jeden z wbudowanych — czysty, profesjonalny wygląd)
+theme: jekyll-theme-cayman
+
+# Język strony (wpływa na atrybut HTML lang)
+lang: pl
+
+# Co przetwarzać i co pomijać
+include:
+  - team-onboarding
+
+exclude:
+  - .gitignore
+  - README.md.bak
+
+# Konfiguracja markdownu
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Linki względne między dokumentami
+relative_links:
+  enabled: true
+  collections: true
+
+# Włącz autoamtyczne dodawanie .html w linkach
+plugins:
+  - jekyll-relative-links
