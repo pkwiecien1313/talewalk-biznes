@@ -29,3 +29,14 @@ relative_links:
 # Włącz autoamtyczne dodawanie .html w linkach
 plugins:
   - jekyll-relative-links
+  - jekyll-seo-tag
+
+# Blokada indeksowania w wyszukiwarkach (Google, Bing) — strona publiczna,
+# ale nie chcemy żeby trafiała do wyników wyszukiwania.
+# Jekyll-seo-tag wstawi <meta name="robots" content="noindex, nofollow"> jeśli ustawione.
+defaults:
+  - scope:
+      path: ""
+    values:
+      sitemap: false
+      robots: "noindex, nofollow"
